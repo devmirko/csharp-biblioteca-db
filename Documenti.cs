@@ -31,8 +31,6 @@ public class Documenti
 
     public string Titolo { get; set; }
     public int Anno { get; set; }
-
-    public bool Disponibile { get; set; }
     public string Settore { get; set; }
     public bool Stato { get; set; }
     public string Scaffale { get; set; }
@@ -49,7 +47,7 @@ public class Documenti
         Stato = stato;
         Scaffale = scaffale;
         Autore = autore;
-        Disponibile = true;
+        
 
 
 

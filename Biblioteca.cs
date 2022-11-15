@@ -25,6 +25,49 @@
 //L’utente deve poter eseguire delle ricerche per codice o per titolo e, eventualmente, effettuare dei prestiti registrando il periodo (Dal/Al) del prestito e il documento.
 //Deve essere possibile effettuare la ricerca dei prestiti dato nome e cognome di un utente.
 
+bool exit = true;
+do
+{
+    Console.WriteLine("1 - inserisci un nuovo documento");
+    Console.WriteLine("2 - elimina un documento esistente");
+    Console.WriteLine("3 - ricerca un docuemnto");
+    Console.WriteLine("4 - resgistra un nuovo prestito");
+    Console.WriteLine("5 - cerca un prestito");
+    
+    
+
+    string sceltaUtente = Console.ReadLine();
+    switch (sceltaUtente)
+    {
+        case "1":
+            
+            break;
+        case "2":
+            
+
+            break;
+        case "3":
+            break;
+            
+        case "4":
+             break;
+            
+        case "5":
+           
+            break;
+
+
+        default:
+            exit = false;
+            break;
+    }
+
+
+
+
+} while (exit);
+
+
 public class Biblioteca
 {
     public List<Documenti> documenti;
