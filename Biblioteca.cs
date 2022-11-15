@@ -1,73 +1,4 @@
 ﻿
-
-
-/*i vuole progettare un sistema per la gestione di una biblioteca.*/
-//Gli utenti si possono registrare al sistema, fornendo:
-//cognome,
-//nome,
-//email,
-//password,
-//recapito telefonico,
-
-//Gli utenti  possono effettuare dei prestiti sui documenti che sono di vario tipo (libri, DVD).
-//I documenti sono caratterizzati da:
-
-//un codice identificativo di tipo stringa (ISBN per i libri, numero seriale per i DVD),
-//titolo,
-//anno,
-//settore(storia, matematica, economia, …),
-//stato(In Prestito, Disponibile),
-//uno scaffale in cui è posizionato,
-//un autore (Nome, Cognome).
-
-//Per i libri si ha in aggiunta il numero di pagine, mentre per i dvd la durata.
-
-//L’utente deve poter eseguire delle ricerche per codice o per titolo e, eventualmente, effettuare dei prestiti registrando il periodo (Dal/Al) del prestito e il documento.
-//Deve essere possibile effettuare la ricerca dei prestiti dato nome e cognome di un utente.
-
-bool exit = true;
-do
-{
-    Console.WriteLine("1 - inserisci un nuovo documento");
-    Console.WriteLine("2 - elimina un documento esistente");
-    Console.WriteLine("3 - ricerca un docuemnto");
-    Console.WriteLine("4 - resgistra un nuovo prestito");
-    Console.WriteLine("5 - cerca un prestito");
-    
-    
-
-    string sceltaUtente = Console.ReadLine();
-    switch (sceltaUtente)
-    {
-        case "1":
-            
-            break;
-        case "2":
-            
-
-            break;
-        case "3":
-            break;
-            
-        case "4":
-             break;
-            
-        case "5":
-           
-            break;
-
-
-        default:
-            exit = false;
-            break;
-    }
-
-
-
-
-} while (exit);
-
-
 public class Biblioteca
 {
     public List<Documenti> documenti;
@@ -138,7 +69,6 @@ public class Biblioteca
                         string fine = Console.ReadLine();
                         utente.prestiti.Add(new Prestito(documento.Codice, inizio, fine));
                         //se il documento e stato prestato non è piu disponibile
-                        documento.Disponibile = false;
                         prestito = true;
 
 
